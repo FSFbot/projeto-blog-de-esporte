@@ -2,7 +2,7 @@ package com.blogesporte.esportes.model;
 
 import jakarta.persistence.*;
 
-import javax.management.relation.Role;
+import com.blogesporte.esportes.model.Role;
 import java.util.HashSet;
 import java.util.Set;
 

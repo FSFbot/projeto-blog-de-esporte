@@ -35,8 +35,9 @@ public class PublicationsService {
     public List<Publication> findAllPublications() {
         return publicationRepository.findAll();
     }
-    class PublicationNotFoundException extends RuntimeException {
+    static class PublicationNotFoundException extends RuntimeException {
         PublicationNotFoundException(Long id) {
             super("Could not find publication " + id);
         }
 }
+};
