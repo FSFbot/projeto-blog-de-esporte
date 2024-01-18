@@ -3,10 +3,11 @@ package com.blogesporte.esportes.Service;
 import com.blogesporte.esportes.Repository.NotificationRepository;
 import com.blogesporte.esportes.model.Notification;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
-
+@Service
 public class NotificationService {
     private final NotificationRepository notificationRepository;
 

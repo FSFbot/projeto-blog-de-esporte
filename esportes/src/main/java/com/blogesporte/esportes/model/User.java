@@ -2,7 +2,6 @@ package com.blogesporte.esportes.model;
 
 import jakarta.persistence.*;
 
-import com.blogesporte.esportes.model.Role;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -40,6 +39,8 @@ public class User {
         this.name = name;
     }
 
+
+
     public String getPassword() {
         return password;
     }
@@ -62,5 +63,11 @@ public class User {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public String setEmail(String email) {return this.email;}
+
+    public String getEmail() {
+        return email;
     }
 }
